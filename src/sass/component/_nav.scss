@@ -1,0 +1,32 @@
+.navbar {
+  padding: 0px !important;
+}
+.navbar-expand-lg .navbar-nav {
+  flex-direction: row-reverse;
+  justify-content: right;
+  width: 100%;
+}
+
+.nav-item {
+  padding: 0px 30px;
+  .active {
+    padding: 10px 30px !important;
+    font-family: "Cairo", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 30px;
+    color: $primary-color-light !important;
+    background-color: rgb(35, 16, 78, 0.08) !important;
+  }
+}
+
+.nav-link {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 30px;
+  padding: 10px 0px;
+  color: $primary-color-light;
+}

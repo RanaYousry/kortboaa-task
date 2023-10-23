@@ -1,0 +1,19 @@
+.form-control {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 24px;
+  text-align: right;
+  color: $primary-color-light !important;
+  background-color: $primary-200;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.input-group-text {
+  border: none;
+  background-color: $primary-200;
+  color: $primary-color-light !important;
+  border-radius: 0px 10px 10px 0px;
+}
