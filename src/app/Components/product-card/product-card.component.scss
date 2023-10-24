@@ -1,0 +1,87 @@
+@import "src/assets/Styles/variables";
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+
+  padding: 1rem;
+  background-color: $primary-white;
+  border-radius: 10px;
+
+  h1 {
+    font-family: "Cairo", sans-serif;
+    font-style: normal;
+    font-size: 1.125rem;
+    color: $primary-color;
+    line-height: 33px;
+    text-align: right;
+  }
+
+  &__price {
+    font-family: "Cairo", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: $primary-color;
+    line-height: 30px;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    gap: 31px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    i {
+      color: $primary-200;
+    }
+  }
+}
+
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 3px;
+
+  &__fill1 {
+    color: #ffe621;
+  }
+  &__fill2 {
+    color: $primary-200;
+  }
+}
+
+.label-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 200px;
+  p {
+    font-family: "Cairo", sans-serif;
+    font-weight: normal;
+    font-size: 0.875rem;
+    color: $primary-white;
+    line-height: 24px;
+    border-radius: 16px;
+    background-color: $primary-color;
+    padding: 5px 15px;
+  }
+}
+
+.label-container2 {
+  p {
+    font-family: "Cairo", sans-serif;
+    font-weight: normal;
+    font-size: 0.875rem;
+    color: $primary-white;
+    line-height: 24px;
+    border-radius: 16px;
+    background-color: #26a37c;
+    padding: 5px 15px;
+  }
+}

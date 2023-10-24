@@ -1,0 +1,11 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 1rem 9.9rem;
+}
+.hide-text {
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}

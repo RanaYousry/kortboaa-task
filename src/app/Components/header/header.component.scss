@@ -18,3 +18,14 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .header-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 1rem;
+    &__left {
+      padding-right: 0rem;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@import "src/assets/Styles/variables";
+
+.image-slide {
+  display: flex;
+  width: 100%;
+}
+
+.swiper-button-prev {
+  color: $primary-white;
+  padding: 0px 1rem;
+}
+.swiper-button-next {
+  color: $primary-white;
+  padding: 0px 1rem;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  @media screen and (max-width: 1679px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+
+  @media screen and (max-width: 1165px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 927px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  h1 {
+    font-family: "Cairo", sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: $primary-black;
+    line-height: 45px;
+    text-align: right;
+  }
+}
+.products-container-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: stretch;
+  justify-content: center;
+
+  @media screen and (max-width: 1679px) {
+    flex-direction: row-reverse;
+  }
+
+  @media screen and (max-width: 1165px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.title {
+  h2 {
+    font-family: "Cairo", sans-serif;
+    font-style: normal;
+    font-size: 1.125rem;
+    color: $primary-color;
+    line-height: 33px;
+    text-align: right;
+  }
+}

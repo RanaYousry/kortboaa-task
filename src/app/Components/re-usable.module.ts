@@ -32,10 +32,12 @@ import { MatTreeModule } from '@angular/material/tree';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSliderModule } from '@angular/material/slider';
 import { HeaderComponent } from './header/header.component';
+import { ProductCardComponent } from './product-card/product-card.component';
+import { ProductCardVerticalComponent } from './product-card-vertical/product-card-vertical.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  declarations: [HeaderComponent],
+  declarations: [HeaderComponent, ProductCardComponent, ProductCardVerticalComponent],
   exports: [
     CommonModule,
     RouterModule,
@@ -70,6 +72,8 @@ import { HeaderComponent } from './header/header.component';
     MatTreeModule,
     MatProgressBarModule,
     MatSliderModule,
+    ProductCardComponent,
+    ProductCardVerticalComponent
   ],
   imports: [
     CommonModule,

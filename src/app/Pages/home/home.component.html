@@ -1,1 +1,52 @@
-<p>home works!</p>
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img
+        class="image-slide"
+        src="assets/Images/hero-image.png"
+        alt="image-slider"
+      />
+    </div>
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+<div class="app-container">
+  <div class="content-container">
+    <div>
+      <div class="title-container pb-3" data-aos="fade-in" data-aos-delay="300">
+        <button class="btn btn-outline">عرض الكل</button>
+        <h1>وصل حديثا</h1>
+      </div>
+      <div class="products-container-vertical">
+        <div class="products-container" data-aos="fade-in" data-aos-delay="300">
+          <div class="card-expand" *ngFor="let product of products">
+            <app-product-card
+              [name]="product.productName"
+              [price]="product.price"
+              [image]="product.image"
+              [label]="product.label"
+            ></app-product-card>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="title" data-aos="fade-in" data-aos-delay="300">
+      <h2>منتجات تصفحتها مؤخرا</h2>
+
+      <div
+        class="products-container-vertical"
+        data-aos="fade-in"
+        data-aos-delay="300"
+      >
+        <div class="card-expand" *ngFor="let product of products2">
+          <app-product-card-vertical
+            [name]="product.productName"
+            [price]="product.price"
+            [image]="product.image"
+          ></app-product-card-vertical>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

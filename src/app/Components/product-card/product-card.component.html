@@ -1,0 +1,30 @@
+<div class="card-container">
+  <div
+    [ngClass]="
+      label === 'جديد' ? 'label-container' : 'label-container label-container2'
+    "
+  >
+    <p>{{ label }}</p>
+    <i class="fa fa-exchange" aria-hidden="true"></i>
+  </div>
+  <img src="../../../assets/Images/Items/{{ image }}" alt="product" />
+  <h1>{{ name }}</h1>
+  <div class="stars">
+    <i class="fa fa-star stars__fill1" aria-hidden="true"></i>
+    <i class="fa fa-star stars__fill1" aria-hidden="true"></i>
+    <i class="fa fa-star stars__fill1" aria-hidden="true"></i>
+    <i class="fa fa-star stars__fill2" aria-hidden="true"></i>
+    <i class="fa fa-star stars__fill2" aria-hidden="true"></i>
+  </div>
+  <div class="card-container__price">ج.م {{ price }}</div>
+  <div class="actions">
+    <div>
+      <i class="fa fa-heart p-2" aria-hidden="true"></i>
+      <i class="fa fa-share-alt" aria-hidden="true"></i>
+    </div>
+
+    <button class="btn btn-secondary btn--icon">
+      أضف للسلة <i class="fa fa-cart-plus" aria-hidden="true"></i>
+    </button>
+  </div>
+</div>

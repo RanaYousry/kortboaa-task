@@ -42,16 +42,36 @@
   font-style: normal;
   font-size: 1rem;
   line-height: 30px;
+
+  div {
+    font-family: "Cairo", sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    color: $primary-color-light !important;
+    line-height: 30px;
+  }
 }
 
 .btn-secondary {
-  color: black !important;
-  background-color: #eaeaea !important;
-  border: 1px solid #eaeaea !important;
-  border-radius: 8px;
-  font-family: "Inter", sans-serif;
+  color: $primary-white !important;
+  background-color: $primary-color-light !important;
+  border: 1px solid $primary-color-light !important;
+  border-radius: 10px;
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 17px;
+  font-size: 1.125rem;
+  line-height: 24px;
+}
+
+.btn-outline {
+  color: $primary-color-light !important;
+  background-color: transparent !important;
+  border: 1px solid $primary-color-light !important;
+  border-radius: 10px;
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 24px;
 }
